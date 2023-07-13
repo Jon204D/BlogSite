@@ -1,0 +1,146 @@
+.headerBody{
+    display: block;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	width: 100%;
+    height: auto;
+    line-height: 1.875em;
+	background-color: rgb(61, 114, 164);
+	color: white;
+    border: .012em solid black;
+	position: sticky; 
+	top:0;
+}
+.headerBody > .companyName {
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    margin-bottom: 0.50em;
+}
+.headerBody > .loginButton {
+	float: right;
+	display: flex;
+	text-decoration: none;
+    border: 0.15em solid black;
+	background-color: white;
+    color: rgb(61, 114, 164);
+	font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+	font-size: 1.50em;
+	font-weight: bold;
+	padding: 0.50em;
+	margin: 0.75em 1em 0 -5em;
+}
+.headerBody > .loginButton:hover {
+    color: black;
+    border: 0.15em solid white;
+	cursor: pointer;
+}
+.headerBody > .farBars {
+	display: none;
+}
+.headerBody > .mobileNav {
+	display: none;
+}
+.headerBody > nav {
+    margin: 1.15em 0 0.50em 0;
+}
+.headerBody > nav > ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.headerBody > nav > ul > li {
+	display: inline-block;
+	height: 100%;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+.headerBody > nav > ul > li > a {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 0.50em;
+    margin-bottom: 1em;
+}
+.headerBody > nav > ul > li > a:hover {
+	color: black;
+	background-color: white;
+}
+@media (max-width: 800px) {
+	.headerBody {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.headerBody > .loginButton {
+		display: none;
+	}
+	.headerBody > nav {
+		display: none;
+	}
+	.headerBody > .companyName {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	.headerBody > .farBars {
+		float: right;
+		display: flex;
+		height: 3em;
+		margin-top: 2em;
+		margin-right: 1em;
+		margin-bottom: 0;
+		margin-left: -5em;
+		color: black;
+	}
+	.headerBody > .mobileNav {
+		margin-top: 0;
+		margin-bottom: 0.50em;
+		background-color: rgb(61, 114, 164);
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		width: 100%;
+		border: .012em solid black;
+	}
+	.headerBody > .mobileNav > ul {
+		margin: 1em;
+		padding: 0;
+	}
+	.headerBody > .mobileNav > ul > button {
+		text-decoration: none;
+		margin: 0.50em 0 0 0;
+		padding: 0;
+		font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+		font-weight: bold;
+		font-size: 2em;
+		color: white;
+		background: none;
+		border: none;
+	}
+	.headerBody > .mobileNav > ul > li {
+		display: block;
+		height: 100%;
+		font-size: 2em;
+		font-weight: bold;
+		color: white; 
+		margin: 1em 0.25em 1.25em 0.25em;
+	}
+	.headerBody > .mobileNav > ul > li > a {
+		width: 100%;
+		height: 100%;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		padding: 0.50em;
+		margin-bottom: 1em;
+	}
+	.headerBody > .mobileNav > ul > li > a:hover {
+	color: black;
+	background-color: white;
+	}
+}

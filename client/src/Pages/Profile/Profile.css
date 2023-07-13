@@ -1,0 +1,80 @@
+.profileBody {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 99.99%;
+    height: auto;
+    border: .012em solid black;
+    text-align: center;
+    font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+}
+.profileForm {
+    border: .15em solid black;
+    border-radius: 1em;
+    margin: 2em auto 2em auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.profileForm > h1 {
+    font-size: 2.50em;
+    margin: 1em 0 0 0;
+}
+.profileForm > .status {
+    font-size: 2.50em;
+    margin: 1em;
+
+}
+.profileFormInfo {
+    margin: 0 auto 0 auto;
+    text-align: left;
+    width: 95%;
+}
+.profileForm > .profileFormInfo > p {
+    font-size: 1.50em;
+    margin: 1em;
+}
+.profileForm > a {
+    text-decoration: none;
+    width: 30%;
+}
+.profileForm > a > .profileButton {
+    background-color: rgb(61, 114, 164);
+    color: white;
+    border: 0.15em black solid;
+    width: 100%;
+    font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1.50em;
+}
+.profileForm > a > .profileButton:hover {
+    border: 0.15em rgb(61, 114, 164) solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.profileForm > h2 > a {
+    text-decoration: none;
+    color: rgb(61, 114, 164);
+}
+.profileForm > h2 > a:hover {
+    color: black;
+    text-decoration: underline;
+}
+@media (max-width: 800px) {
+    .profileBody{
+        width: 100%;
+    }
+    .profileForm {
+        width: 80%;
+    }
+    .profileForm > a {
+        width: 50%;
+    }
+    .profileFormInfo {
+        word-wrap: break-word;
+    }
+}

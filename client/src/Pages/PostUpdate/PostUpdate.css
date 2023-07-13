@@ -1,0 +1,106 @@
+.postUpdateBody {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 99.99%;
+    height: auto;
+    border: .012em solid black;
+    text-align: center;
+    font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+}
+.postUpdateForm {
+    border: .15em solid black;
+    border-radius: 1em;
+    margin: 2em auto 2em auto;
+    width: 50%;
+    display: grid;
+    grid-template-areas: 'title' 'caption' 'postUpdateButton';
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+.postUpdateForm > h1 {
+    font-size: 2.50em;
+    margin: 1em 0 0 0;
+}
+.title, .caption {
+    display: block;
+    width: auto;
+}
+.postUpdateForm > div > input {
+    display: inline-flex;
+    width: 80%;
+    height: 2.75em;
+    outline-color: rgb(61, 114, 164);
+    margin: 1em;
+}
+.postUpdateForm > div > textarea {
+    display: inline-flex;
+    height: 1.75em;
+    outline-color: rgb(61, 114, 164);
+    margin: 1em;
+    font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+    min-height: 30em;
+    max-height: 30em;
+    min-width: 80%;
+    max-width: 80%;
+}
+.postUpdateForm > div > input::placeholder, .postUpdateForm > div > textarea::placeholder {
+    color: rgb(61, 114, 164);
+    font-weight: bold;
+}
+.postUpdateForm > .postUpdateButton {
+    background-color: rgb(61, 114, 164);
+    color: white;
+    border: 0.15em black solid;
+    width: 42%;
+    height: 2em;
+    font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em auto 2em auto;
+}
+.postUpdateForm > .postUpdateButton:hover {
+    border: 0.15em rgb(61, 114, 164) solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.postUpdateForm > a > .postUpdateButton {
+    background-color: rgb(61, 114, 164);
+    color: white;
+    border: 0.15em black solid;
+    width: 42%;
+    height: 2em;
+    font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em auto 2em auto;
+}
+.postUpdateForm > a > .postUpdateButton:hover {
+    border: 0.15em rgb(61, 114, 164) solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.postUpdateForm > h2 > a {
+    text-decoration: none;
+    color: rgb(61, 114, 164);
+}
+.postUpdateForm > h2 > a:hover {
+    color: black;
+    text-decoration: underline;
+}
+@media (max-width: 800px) {
+    .postUpdateBody{
+        width: 100%;
+    }
+    .postUpdateForm {
+        width: 80%;
+    }
+    .postUpdateForm > div > input + .postUpdateForm > div > textarea {
+        width: 75%
+    }
+    .postUpdateForm > .postUpdate, .postUpdateForm > a > .postUpdate {
+        width: 77%;
+    }
+}

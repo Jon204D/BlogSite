@@ -1,0 +1,296 @@
+.postDetailBody{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border: .012em solid black;
+    text-align: center;
+}
+.postDetailForm {
+    margin: 2em auto 2em auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.postDetailForm > h1 {
+    font-size: 2.50em;
+    margin: 1em 0 0 0;
+}
+.postDetailForm > .status {
+    font-size: 2.50em;
+    margin: 1em;
+}
+.postDetailForm > table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.postDetailForm > table > .postData {
+    display: block;
+    text-align: center;
+    border: .05em solid black;
+}
+.postDetailForm > table > .postData > .ThreeDots {
+    float: right;
+    display: flex;
+    height: 3em;
+    margin : 0 1em 0 -5em;
+    cursor: pointer;
+}
+.postDetailForm > table > .postData > nav {
+    margin-bottom: 0.50em;
+    background-color: rgb(61, 114, 164);
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    margin-top: 3%;
+    right: 16.12%;
+    width: 25%;
+    border: .012em solid black;
+}
+.postDetailForm > table > .postData > nav > ul {
+    margin: 1em;
+    padding: 0;
+    text-decoration: none;
+}
+.postDetailForm > table > .postData > nav > ul > a {
+    text-decoration: none;
+}
+.postDetailForm > table > .postData > nav > ul > a > li {
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 1.50em;
+    font-weight: bold;
+    color: white; 
+    margin: 1em auto 1em auto;
+}
+.postDetailForm > table > .postData > nav > ul > a > li:hover {
+    background-color: white;
+    color: black;
+
+}
+.postDetailForm > table > .postData > nav > ul > li {
+    display: block;
+    width: 100%;
+    font-size: 1.50em;
+    font-weight: bold;
+    color: white; 
+    margin: 1em auto 1em auto;
+}
+.postDetailForm > table > .postData > nav > ul > li:hover {
+    background-color: white;
+    color: black;
+
+}
+.postDetailForm > table > .postData > tr {
+    margin: auto;
+}
+.postDetailForm > table > .postData > tr > td > .authorDate > a {
+    text-decoration: none;
+    color: rgb(61, 114, 164);
+    cursor: pointer;
+}
+.postDetailForm > table > .postData > tr > td > .authorDate > a:hover {
+    color: black;
+}
+.postDetailForm > table > .postData > tr > td > .title {
+    margin: auto;
+    text-decoration: underline;
+    text-align: center;
+    width: 80%;
+}
+.postDetailForm > table > .postData > tr > td > .authorDate {
+    margin: 2% 0 2% 5%;    
+}
+.postDetailForm > table > .postData > tr > td > .authorDate > a > .author, .postDetailForm > table > .postData > tr > td > .authorDate > .datetime {
+    margin: auto;
+    text-align: left;
+}
+.postDetailForm > table .postData > tr > td > .btn {
+    width: 30%;
+    height: 2em;
+    background-color: rgb(61, 114, 164);
+    color: white;
+    border: 0.15em black solid;
+}
+.postDetailForm > table .postData > tr > td > .btn:hover {
+    border: 0.15em rgb(61, 114, 164) solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.postDetailForm > table .postData > tr > td > .caption {
+    margin: auto;
+    white-space: pre-line;
+    text-align: justify;
+    word-wrap: break-word;
+    width: 90%;
+    font-weight: bold;
+}
+.postDetailForm > table .postData > tr > td > .interaction {
+    width: 20%;
+    height: 2em;
+    background-color: rgb(61, 114, 164);
+    color: white;
+    border: 0.15em black solid;
+    margin: 2%;
+}
+.postDetailForm > table .postData > tr > td > .interaction:hover {
+    border: 0.15em rgb(61, 114, 164) solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.postDetailForm > table > .postData > .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.80%;
+}
+.postDetailForm > table > .postData > .line > td {
+    width: 100%;
+}
+.postDetailForm > table > .postData > .line > td > hr {
+    font-weight: bold;
+}
+.postDetailForm > table > .postData > .authorData {
+    display: inline-flex;
+    float: left;
+    text-align: center;
+    width: 99.80%;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+.postDetailForm > table > .postData > .authorData > .authorDate {
+    width: 70%;
+}
+.postDetailForm > table > .postData > .authorData > .authorDate > .authorDate{
+    margin: 2% 0 2% 5%;    
+}
+.postDetailForm > table > .postData > .authorData > .authorDate > .authorDate > .author, .postDetailForm > table > .postData > .authorData > .authorDate > .authorDate > .datetime {
+    margin: auto;
+    text-align: left;
+}
+.postDetailForm > table > .postData > .authorData > .commentInterations {
+    width: 30%;
+}
+.postDetailForm > table > .postData > .authorData > .commentInterations > .commentInterations {
+    float: right;
+    width: 30%;
+    height: 2em;
+    background-color: rgb(61, 114, 164);
+    color: white;
+    border: 0.15em black solid;
+    margin: 8% 4% 2% 4%;
+}
+.postDetailForm > table > .postData > .authorData > .commentInterations > .commentInterations:hover {
+    border: 0.15em rgb(61, 114, 164) solid;
+    background-color: white;
+    color: black;
+}
+.postDetailForm > table > .postData > .authorData > td > .dot {
+    display: inline-flex;
+    float: right;
+    margin-top: 8%;
+    font-size: 1.30em;
+}
+.postDetailForm > table > .postData > .commentRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.80%;
+}
+.postDetailForm > table > .postData > .commentRow > .commentdata {
+    width: 100%;
+    margin-bottom: 1.25em;
+}
+.postDetailForm > table > .postData > .commentRow > .commentdata > .comment {
+    display: block;
+    width: 100%;
+    margin: auto;
+    font-weight: bold;
+}
+.postDetailForm > textarea {
+    display: block;
+    height: 1.75em;
+    outline-color: rgb(61, 114, 164);
+    margin: 1em;
+    font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+    font-weight: bold;
+    min-height: 2em;
+    max-height: 2em;
+    min-width: 79%;
+    max-width: 79%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.postDetailForm > textarea::placeholder {
+    color: rgb(61, 114, 164);
+    font-weight: bold;
+}
+.postDetailForm > textarea:focus {
+    min-height: 6em;
+    max-height: 6em;
+}
+.postDetailForm > .submit {
+    display: block;
+    width: 25%;
+    height: 2em;
+    background-color: rgb(61, 114, 164);
+    color: white;
+    border: 0.15em black solid; 
+}
+.postDetailForm > .submit:hover {
+    border: 0.15em rgb(61, 114, 164) solid;
+    background-color: white;
+    color: black;
+}
+@media (max-width: 800px) {
+    .postDetailForm > table > .postData > .ThreeDots {
+        height: 4em;
+        margin : 1em -0.50em 0 -5em;
+    }
+    .postDetailForm > table > .postData > nav {
+        margin-top: 5em;
+        right: 10%;
+        width: 15em;
+    }
+    .postDetailForm > table > .postData > nav > ul {
+        margin: 1em;
+        padding: 0;
+    }
+    .postDetailForm > table > .postData > nav > ul > li {
+        display: block;
+        height: 50%;
+        font-size: 1.50em;
+        font-weight: bold;
+        color: white; 
+        margin: 1em 0.25em 1.25em 0.25em;
+    }
+    .postDetailForm > table > .postData > tr > td > .authorDate {
+        margin: 1em;    
+    }    
+    .postDetailForm > table > .postData > tr > td > .authorDate > .author, .postDetailForm > table > .postData > tr > td > .authorDate > .datetime {
+        text-align: center;
+    }
+    .postDetailForm > table .postData > tr > td > .interaction {
+        width: 35%;
+        height: 2em;
+        background-color: rgb(61, 114, 164);
+        color: white;
+        border: 0.15em black solid;
+        margin: 1%;
+    }
+    .postDetailForm > table > .postData > .commentRow > .commentdata > .comment {
+        display: block;
+        width: 95%;
+        margin: auto;
+        font-weight: bold;
+    }    
+    .postDetailForm > table > .postData > .authorData > .commentInterations > .commentInterations {
+        width: 75%;
+    }
+}

@@ -1,0 +1,111 @@
+.homeBody{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border: .012em solid black;
+    text-align: center;
+}
+.homeForm {
+    margin: 2em auto 2em auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.homeForm > h1 {
+    font-size: 2.50em;
+    margin: 1em 0 0 0;
+}
+.homeForm > .status {
+    font-size: 2.50em;
+    margin: 1em;
+}
+.homeForm > table {
+    margin: auto auto 2em auto;
+    width: 80%;
+}
+.homeForm > table > .postData {
+    display: block;
+    text-align: center;
+    border: .05em solid black;
+}
+.homeForm > table > .postData > tr {
+    margin: auto;
+}
+.homeForm > table > .postData > tr > td > a {
+    text-decoration: none;
+    color: rgb(61, 114, 164);
+    cursor: pointer;
+}
+.homeForm > table > .postData > tr > td > a:hover {
+    color: black;
+}
+.homeForm > table > .postData > tr > td > a > .title {
+    margin: auto;
+    text-decoration: underline;
+    text-align: center;
+}
+.homeForm > table > .postData > tr > td > .authorDate{
+    margin: 2% 0 2% 5%;    
+}
+.homeForm > table > .postData > tr > td > .authorDate > a {
+    text-decoration: none;
+    color: rgb(61, 114, 164);
+    cursor: pointer;
+}
+.homeForm > table > .postData > tr > td > .authorDate > a:hover {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.homeForm > table > .postData > tr > td > .authorDate > a > .author, .homeForm > table > .postData > tr > td > .authorDate > .datetime {
+    margin: auto;
+    text-align: left;
+}
+.homeForm > table .postData > tr > td > .btn {
+    width: 30%;
+    height: 2em;
+    background-color: rgb(61, 114, 164);
+    color: white;
+    border: 0.15em black solid;
+}
+.homeForm > table .postData > tr > td > .btn:hover {
+    border: 0.15em rgb(61, 114, 164) solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.homeForm > table .postData > tr > td > .caption {
+    margin: auto;
+    white-space: pre-line;
+    text-align: justify;
+    word-wrap: break-word;
+    width: 90%;
+    font-weight: bold;
+}
+.homeForm > table .postData > tr > td > .interaction {
+    width: 20%;
+    height: 2em;
+    background-color: rgb(61, 114, 164);
+    color: white;
+    border: 0.15em black solid;
+    margin: 2%;
+}
+.homeForm > table .postData > tr > td > .interaction:hover {
+    border: 0.15em rgb(61, 114, 164) solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+@media (max-width: 800px) {
+    .homeForm > table .postData > tr > td > .interaction {
+        width: 30%;
+        height: 2em;
+        background-color: rgb(61, 114, 164);
+        color: white;
+        border: 0.15em black solid;
+        margin: 1%;
+    }
+}

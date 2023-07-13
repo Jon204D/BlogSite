@@ -1,0 +1,40 @@
+.aboutBody{
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 99.99%;
+    height: auto;
+    border: .012em solid black;
+    text-align: center;
+    font-family: 'Century Schoolbook', 'Georgia', 'Arial';
+}
+.aboutForm {
+    border: .15em solid black;
+    border-radius: 1em;
+    margin: 2em auto 2em auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.aboutForm > h1 {
+    font-size: 2.50em;
+    margin: 1em 0 0 0;
+}
+.aboutForm > p {
+    text-align: left;
+    font-weight: bold;
+    margin: 0 2em 1em;
+}
+@media (max-width: 800px) {
+    .aboutBody{
+        width: 100%;
+    }
+    .aboutForm {
+        width: 90%;
+    }
+    .aboutForm > h1 {
+        margin: 1em 0.10em 0;
+    }    
+}
